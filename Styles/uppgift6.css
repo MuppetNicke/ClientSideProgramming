@@ -1,0 +1,44 @@
+body {
+	font-family:Comic Sans MS;
+}
+
+.container {
+	margin:auto;
+	border:1px solid red;
+	width:500px;
+	background-color:#3f3f4c;
+}
+
+.innerContainer {
+	margin:auto;
+	width:200px;
+	height:500px;
+	text-align:center;
+}
+
+h3 {
+	color:#a4cab2;
+}
+
+.button {
+	margin-top:10px;
+	border:2px solid #65656f;
+	display:inline-block;
+	text-align:center;
+	width:50px;
+	border-radius:4px;
+	background-color:#ff6700;
+}
+
+.button:hover {
+	cursor:pointer;
+}
+
+.button:active {
+	border-style: inset;
+}
+
+#output {
+	color:#a4cab2;
+	margin-top:10px;
+}
