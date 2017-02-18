@@ -6,7 +6,7 @@ function OnLoad()
 
 function FetchRequest()
 {
-	fetch("https://forverkliga.se/JavaScript/api/simple.php?world=cool")
+	fetch("http://forverkliga.se/JavaScript/api/simple.php?world=cool")
 	.then(function(response)
 	{
 		return response.json();
