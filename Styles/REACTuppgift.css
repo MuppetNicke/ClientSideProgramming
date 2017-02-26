@@ -1,0 +1,11 @@
+.unread {
+	background-color: red;
+}
+
+.reading {
+	background-color: yellow;
+}
+
+.read {
+	background-color: green;
+}
