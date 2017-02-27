@@ -1,15 +1,14 @@
 const lista = [
-  {namn: 'köttbullar', antal: 4},
-  {namn: 'falafel', antal: 3},
-  {namn: 'prinsesstårta', antal: 1}
+  {namn: 'Pengar', translation: "Money"},
+  {namn: 'Stor', translation: "Big"},
+  {namn: 'Sjuk', translation: "Sick"}
 ];
 
-class Matlista extends React.Component {
+class Lista extends React.Component {
   render() {
     let key = 0;
     const nyLista = this.props.lista.map(
-      obj => (<li key={obj.namn + obj.antal}>{obj.namn} 
-      ({obj.antal} st)</li>)
+      obj => (<li key={obj.namn + obj.translation}>{obj.namn} = {obj.translation}</li>)
     );
     return (<ul>{nyLista}</ul>);
   }
@@ -17,6 +16,6 @@ class Matlista extends React.Component {
 
 
 ReactDOM.render(
-  <Matlista lista={lista} />,
+  <Lista lista={lista} />,
   document.getElementById('root')
 );
